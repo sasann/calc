@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>電卓</title>
+    </head>
+    <body>
+        <h2>電卓</h2>
+        <hr>
+        <form name="calc">
+            <table border="2">
+                <tr>
+                    <th colspan="3"  align="right"><div id="output">0</div></th>
+                    <th><div id="type"></div></th>
+                </tr>
+                <tr>
+                    <td><input type="button" value="7" onclick="calc_run(7)"></td>
+                    <td><input type="button" value="8" onclick="calc_run(8)"></td>
+                    <td><input type="button" value="9" onclick="calc_run(9)"></td>
+                    <td><input type="button" value="÷" onclick="calc_run('/')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="4" onclick="calc_run(4)"></td>
+                    <td><input type="button" value="5" onclick="calc_run(5)"></td>
+                    <td><input type="button" value="6" onclick="calc_run(6)"></td>
+                    <td><input type="button" value="×" onclick="calc_run('×')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="1" onclick="calc_run(1)"></td>
+                    <td><input type="button" value="2" onclick="calc_run(2)"></td>
+                    <td><input type="button" value="3" onclick="calc_run(3)"></td>
+                    <td><input type="button" value="-" onclick="calc_run('-')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="0" onclick="calc_run(0)"></td>
+                    <td><input type="button" value="." onclick="calc_period()"></td>
+                    <td><input type="button" value="=" onclick="calc_equal()"></td>
+                    <td><input type="button" value="+" onclick="calc_run('+')"></td>
+                </tr>
+                
+                
+            </table>
+        </form>
+
+    </body>
+</html>
+
