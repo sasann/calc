@@ -26,9 +26,19 @@
           kigou = btn;
           document.getElementById("type").innerHTML = kigou;
 
+
+function calc_run(btn) {
+  if (!isNaN(btn)) {
+    if (!isNaN(key)) {
+      if (num == "0") {
+        num = "" + btn;
+      } else {
+        num += "" + btn;
       }
-      key = btn;    
+    } else {
+      num = "" + btn;
     }
+
 
   function calc_period(){
         if(num.indexOf(".")<0) num+=".";
@@ -49,3 +59,4 @@
    }
       
 </Script>
+
