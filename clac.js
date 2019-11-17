@@ -4,7 +4,7 @@ num = "0";
 key = "";
 kigou = "";
 
-function clac_run(btn) {
+function calc_run(btn) {
   if (!isNaN(btn)) {
     if (!isNaN(key)) {
       if (num == "0") {
@@ -23,17 +23,17 @@ function clac_run(btn) {
       num = "0";
       document.getElementById("output").innerHTML = ans;
     }
-    kigou = btm;
+    kigou = btn;
     document.getElementById("type").innerHTML = kigou;
   }
   key = btn;
 }
 
-function clac_period() {
+function calc_period() {
   if (num.indexOf(".") < 0) num += ".";
   document.getElementById("output").innerHTML = num;
 }
-function clac_equal() {
+function calc_equal() {
   if (key == "=") {
     ans = 0;
     key = "";
